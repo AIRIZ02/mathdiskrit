@@ -1,1 +1,0 @@
-# mathdiskrit1
