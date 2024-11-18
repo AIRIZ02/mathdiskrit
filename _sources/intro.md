@@ -1,3 +1,5 @@
 # **"Selamat Datang di Dunia Matematika Diskrit"**
 
 "Matematika diskrit adalah fondasi dari banyak teknologi yang kita gunakan setiap hari, mulai dari sistem komputer hingga enkripsi data yang melindungi informasi kita secara digital. Dalam bidang ini, Anda akan mempelajari bagaimana pola, struktur, dan logika digunakan untuk menyelesaikan masalah kompleks. Matematika diskrit tidak hanya berperan penting dalam komputasi dan algoritma, tetapi juga menjadi dasar dari pengembangan teori jaringan, pemrograman, dan kriptografi yang mengamankan komunikasi kita. Dengan menguasai konsep-konsep dalam matematika diskrit, Anda membuka pintu menuju pemahaman yang lebih dalam tentang dunia teknologi yang berkembang pesat dan mampu memecahkan tantangan modern dengan pendekatan yang cerdas dan efektif. Mari bergabung dengan kami untuk menjelajahi keindahan dan kekuatan matematika diskrit dalam membentuk masa depan teknologi."
+
+$$**By: Airiz**$$
