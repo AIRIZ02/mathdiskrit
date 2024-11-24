@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>“Selamat Datang di Dunia Matematika Diskrit” &#8212; My sample book</title>
+    <title>Deretan (sequence) &#8212; My sample book</title>
   
   
   
@@ -59,10 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'deret rekursif';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="HIMPUNAN" href="Himpunan.html" />
+    <link rel="prev" title="Cetrality Graph" href="Cetrality%20Graph.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -145,7 +143,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -176,25 +174,26 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     “Selamat Datang di Dunia Matematika Diskrit”
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Himpunan.html">HIMPUNAN</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Logika%20Matematika.html">Logika Matematika</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ALGORITMA.html">ALGORITMA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Al-jabar%20bolean%20dan%20gerbang%20logika.html">Aljabar Boolean</a></li>
+
+
 <li class="toctree-l1"><a class="reference internal" href="Cetrality%20Graph.html">Cetrality Graph</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deret rekursif.html">Deret</a></li>
 
 
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="deret%20rekursif.html">Deretan (sequence)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Deretan (sequence)</a></li>
 </ul>
 
     </div>
@@ -266,7 +265,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fderet rekursif.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -296,7 +295,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/deret rekursif.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -367,7 +366,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -378,11 +379,26 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>“Selamat Datang di Dunia Matematika Diskrit”</h1>
+    <h1>Deretan (sequence)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian-rumus-deret">Pembuktian Rumus Deret</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian-rumus-deret-geometri">Pembuktian Rumus Deret Geometri:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian">Pembuktian:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Hasil Akhir:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -392,13 +408,162 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="selamat-datang-di-dunia-matematika-diskrit">
-<h1><strong>“Selamat Datang di Dunia Matematika Diskrit”</strong><a class="headerlink" href="#selamat-datang-di-dunia-matematika-diskrit" title="Link to this heading">#</a></h1>
-<p>“Matematika diskrit adalah fondasi dari banyak teknologi yang kita gunakan setiap hari, mulai dari sistem komputer hingga enkripsi data yang melindungi informasi kita secara digital. Dalam bidang ini, Anda akan mempelajari bagaimana pola, struktur, dan logika digunakan untuk menyelesaikan masalah kompleks. Matematika diskrit tidak hanya berperan penting dalam komputasi dan algoritma, tetapi juga menjadi dasar dari pengembangan teori jaringan, pemrograman, dan kriptografi yang mengamankan komunikasi kita. Dengan menguasai konsep-konsep dalam matematika diskrit, Anda membuka pintu menuju pemahaman yang lebih dalam tentang dunia teknologi yang berkembang pesat dan mampu memecahkan tantangan modern dengan pendekatan yang cerdas dan efektif. Mari bergabung dengan kami untuk menjelajahi keindahan dan kekuatan matematika diskrit dalam membentuk masa depan teknologi.”</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="deretan-sequence">
+<h1>Deretan (sequence)<a class="headerlink" href="#deretan-sequence" title="Link to this heading">#</a></h1>
+<p><strong>Deretan</strong> adalah suatu urutan atau susunan elemen atau objek yang disusun secara teratur berdasarkan suatu aturan tertentu. Elemen dalam deretan biasanya berupa angka, huruf, simbol, atau objek lainnya, dan urutannya dapat didasarkan pada pola, nilai, atau hubungan tertentu</p>
+<ul class="simple">
+<li><p><strong>Definisi</strong>: Sebuah <strong>deretan</strong> adalah fungsi dari subset suatu himpunan bilangan bulat (biasanya <strong>N</strong> atau <strong>P</strong>) ke sebuah himpunan <strong>S</strong>.
+contoh :
+<span class="math notranslate nohighlight">\(N = \{1, 2, 3, 4, … \}\)</span>
+<span class="math notranslate nohighlight">\(S \text{ misalnya } \{2, 4, 6, 8, \dots\},   \{1/3, 1/5, 1/7, \dots \},  dsb\)</span></p></li>
+<li><p>Notasi deretan: <span class="math notranslate nohighlight">\(\{a_n\}\)</span></p></li>
+</ul>
+<section id="pembuktian-rumus-deret">
+<h2>Pembuktian Rumus Deret<a class="headerlink" href="#pembuktian-rumus-deret" title="Link to this heading">#</a></h2>
+<p><strong>Soal:</strong>
+Buatlah Pembuktian Rumus Berikut :</p>
 <div class="math notranslate nohighlight">
-\[**By: Airiz**\]</div>
-<div class="toctree-wrapper compound">
-</div>
+\[\sum_{k=0}^{n} ar^k \text{ }(r \neq 0)\]</div>
+<p><strong>Jawab :</strong>
+Rumus yang diberikan adalah bentuk dari <strong>deret geometri</strong>:</p>
+<div class="math notranslate nohighlight">
+\[S_n = \sum_{k=0}^n ar^k = a + ar + ar^2 + \dots + ar^n\]</div>
+<p>dengan <span class="math notranslate nohighlight">\(( r \neq 0 )\)</span> dan <span class="math notranslate nohighlight">\(( r \neq 1 )\)</span>. Untuk membuktikan rumus tertutup dari deret ini, kita dapat menggunakan langkah berikut:</p>
+<hr class="docutils" />
+<section id="pembuktian-rumus-deret-geometri">
+<h3>Pembuktian Rumus Deret Geometri:<a class="headerlink" href="#pembuktian-rumus-deret-geometri" title="Link to this heading">#</a></h3>
+<p><strong>Langkah 1: Tulis deretnya</strong><br />
+Mulai dengan bentuk deret geometri:</p>
+<div class="math notranslate nohighlight">
+\[S_n = a + ar + ar^2 + \dots + ar^n\]</div>
+<p><strong>Langkah 2: Kalikan <span class="math notranslate nohighlight">\(( S_n )\)</span> dengan rasio <span class="math notranslate nohighlight">\(( r )\)</span></strong><br />
+Kalikan kedua sisi persamaan dengan <span class="math notranslate nohighlight">\(( r )\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[rS_n = ar + ar^2 + ar^3 + \dots + ar^{n+1}\]</div>
+<p><strong>Langkah 3: Kurangi kedua persamaan</strong><br />
+Kurangi <span class="math notranslate nohighlight">\(( S_n )\)</span> dengan <span class="math notranslate nohighlight">\(( rS_n )\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[S_n - rS_n = (a + ar + ar^2 + \dots + ar^n) - (ar + ar^2 + \dots + ar^{n+1})\]</div>
+<p>Semua suku di kanan akan saling menghilangkan, kecuali <span class="math notranslate nohighlight">\(( a )\)</span> dan <span class="math notranslate nohighlight">\(( ar^{n+1} )\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[S_n (1 - r) = a - ar^{n+1}\]</div>
+<p><strong>Langkah 4: Sederhanakan persamaan</strong><br />
+Faktor <span class="math notranslate nohighlight">\(( S_n )\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[S_n = \frac{a(1 - r^{n+1})}{1 - r}, \quad \text{dengan \( r \neq 1 \)}.\]</div>
+</section>
+<hr class="docutils" />
+<section id="hasil-akhir">
+<h3>Hasil Akhir:<a class="headerlink" href="#hasil-akhir" title="Link to this heading">#</a></h3>
+<p>Rumus tertutup dari deret geometri adalah:
+$<span class="math notranslate nohighlight">\(S_n = \frac{a(1 - r^{n+1})}{1 - r}, \quad \text{untuk \( r \neq 1 \)}.\)</span>$</p>
+<p>Rumus ini sangat berguna dalam banyak aplikasi matematika, termasuk analisis keuangan dan pemodelan data.</p>
+<hr class="docutils" />
+<p><strong>Soal :</strong>
+Buatlah Pembuktian Rumus Berikut :</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^n k\]</div>
+<p><strong>Jawab :</strong>
+Rumus yang diberikan adalah jumlah bilangan bulat dari ( k = 1 ) hingga ( n ), yaitu:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^n k = 1 + 2 + 3 + \dots + n\]</div>
+<p>Rumus ini memiliki bentuk tertutup yang dinyatakan sebagai:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^n k = \frac{n(n+1)}{2}\]</div>
+<p>Berikut adalah pembuktiannya:</p>
+</section>
+<hr class="docutils" />
+<section id="pembuktian">
+<h3>Pembuktian:<a class="headerlink" href="#pembuktian" title="Link to this heading">#</a></h3>
+<p><strong>Langkah 1: Tulis deretnya dua kali dengan urutan terbalik</strong><br />
+Tulis jumlah <span class="math notranslate nohighlight">\(( S )\)</span> dua kali, satu dalam urutan asli, dan satu dalam urutan terbalik:</p>
+<div class="math notranslate nohighlight">
+\[S = 1 + 2 + 3 + \dots + n\]</div>
+<div class="math notranslate nohighlight">
+\[S = n + (n-1) + (n-2) + \dots + 1\]</div>
+<p><strong>Langkah 2: Tambahkan kedua persamaan</strong><br />
+Tambahkan kedua persamaan tersebut secara baris demi baris:</p>
+<div class="math notranslate nohighlight">
+\[2S = (1 + n) + (2 + (n-1)) + (3 + (n-2)) + \dots + (n + 1)\]</div>
+<p>Setiap pasangan menghasilkan jumlah <span class="math notranslate nohighlight">\((n + 1)\)</span>, dan ada total <span class="math notranslate nohighlight">\(( n )\)</span> pasangan:</p>
+<div class="math notranslate nohighlight">
+\[2S = n(n+1)\]</div>
+<p><strong>Langkah 3: Sederhanakan</strong><br />
+Bagi kedua sisi persamaan dengan 2 untuk mendapatkan <span class="math notranslate nohighlight">\(( S )\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[S = \frac{n(n+1)}{2}\]</div>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h3>Hasil Akhir:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Rumus jumlah bilangan bulat dari 1 hingga ( n ) adalah:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^n k = \frac{n(n+1)}{2}.\]</div>
+<p>Rumus ini sering digunakan dalam teori bilangan, kombinatorika, dan aplikasi lainnya.</p>
+<hr class="docutils" />
+<p><strong>Soal :</strong>
+Buatlah Pembuktian Rumus Berikut</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^n k^2\]</div>
+<p><strong>Jawab :</strong>
+Rumus yang ditampilkan adalah bentuk jumlah kuadrat dari bilangan bulat pertama hingga <span class="math notranslate nohighlight">\((n)\)</span>, yaitu:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^n k^2\]</div>
+<p>Rumus umumnya adalah:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}.\]</div>
+<p><strong>Pembuktian</strong>
+Pembuktian rumus ini dapat dilakukan menggunakan <strong>induksi matematika</strong>.</p>
+<hr class="docutils" />
+<p><strong>Langkah 1: Basis Induksi</strong>
+Untuk <span class="math notranslate nohighlight">\(( n = 1 )\)</span>, hitunglah sisi kiri dan sisi kanan.</p>
+<ul class="simple">
+<li><p>Sisi kiri:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^1 k^2 = 1^2 = 1.\]</div>
+<ul class="simple">
+<li><p>Sisi kanan:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\frac{1(1+1)(2(1)+1)}{6} = \frac{1 \cdot 2 \cdot 3}{6} = 1.\]</div>
+<p>Jadi, basis induksi benar.</p>
+<hr class="docutils" />
+<p><strong>Langkah 2: Asumsi Induksi</strong>
+Misalkan rumus benar untuk <span class="math notranslate nohighlight">\(( n = m )\)</span>, yaitu:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^m k^2 = \frac{m(m+1)(2m+1)}{6}.\]</div>
+<hr class="docutils" />
+<p><strong>Langkah 3: Pembuktian untuk <span class="math notranslate nohighlight">\(n = m+1\)</span></strong>
+Tambahkan suku berikutnya (<span class="math notranslate nohighlight">\((m+1)^2\)</span>) pada kedua sisi asumsi induksi:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^{m+1} k^2 = \sum_{k=1}^m k^2 + (m+1)^2.\]</div>
+<p>Dari asumsi induksi:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^{m+1} k^2 = \frac{m(m+1)(2m+1)}{6} + (m+1)^2.\]</div>
+<p>Faktor <span class="math notranslate nohighlight">\((m+1)\)</span> dari kedua suku:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^{m+1} k^2 = \frac{(m+1) \left[ m(2m+1) + 6(m+1) \right]}{6}.\]</div>
+<p>Sederhanakan ekspresi dalam kurung:</p>
+<div class="math notranslate nohighlight">
+\[m(2m+1) + 6(m+1) = 2m^2 + m + 6m + 6 = 2m^2 + 7m + 6.\]</div>
+<p>Faktorkan:</p>
+<div class="math notranslate nohighlight">
+\[2m^2 + 7m + 6 = (m+2)(2m+3).\]</div>
+<p>Substitusikan kembali:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^{m+1} k^2 = \frac{(m+1)(m+2)(2m+3)}{6}.\]</div>
+<p>Ini sesuai dengan bentuk rumus untuk <span class="math notranslate nohighlight">\(n = m+1\)</span>. Maka, langkah induksi terbukti.</p>
+</section>
+<hr class="docutils" />
+<section id="kesimpulan">
+<h3>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h3>
+<p>Dengan basis dan langkah induksi terbukti, rumus:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}\]</div>
+<p>benar untuk semua bilangan bulat <span class="math notranslate nohighlight">\(n \geq 1\)</span>.</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -431,14 +596,14 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="Himpunan.html"
-       title="next page">
+    <a class="left-prev"
+       href="Cetrality%20Graph.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">HIMPUNAN</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Cetrality Graph</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -446,6 +611,28 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian-rumus-deret">Pembuktian Rumus Deret</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian-rumus-deret-geometri">Pembuktian Rumus Deret Geometri:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian">Pembuktian:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Hasil Akhir:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
