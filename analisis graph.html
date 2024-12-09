@@ -6,8 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; My sample book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Analisa graph &#8212; My sample book</title>
   
   
   
@@ -56,9 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'analisis graph';</script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Deretan (sequence)" href="deret%20rekursif.html" />
+    <link rel="prev" title="Aljabar Boolean" href="Al-jabar%20bolean%20dan%20gerbang%20logika.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -121,8 +124,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -178,14 +179,14 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Himpunan.html">HIMPUNAN</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Logika%20Matematika.html">Logika Matematika</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ALGORITMA.html">ALGORITMA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Al-jabar%20bolean%20dan%20gerbang%20logika.html">Aljabar Boolean</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="analisis%20graph.html">Analisa graph</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Analisa graph</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deret%20rekursif.html">Deretan (sequence)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Probabilitas%20Diskrit%20Probabilitas%20Bayesian.html">Probabilitas Diskrit &amp; Probabilitas Bayesian</a></li>
 </ul>
@@ -259,7 +260,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fanalisis graph.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -271,6 +272,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/analisis graph.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -312,7 +361,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -323,11 +374,32 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1>Analisa graph</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-analisis-graph">Pengertian analisis graph</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#social-network-analysis">social network analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-social-network-analysis">pengertian social network analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#social-network">Social network</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness Centrality</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-closeness-centrality">pengertian Closeness Centrality</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -337,13 +409,97 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
+  <section class="tex2jax_ignore mathjax_ignore" id="analisa-graph">
+<h1>Analisa graph<a class="headerlink" href="#analisa-graph" title="Link to this heading">#</a></h1>
+<section id="pengertian-analisis-graph">
+<h2>Pengertian analisis graph<a class="headerlink" href="#pengertian-analisis-graph" title="Link to this heading">#</a></h2>
+<p>Analisis Graph adalah proses mempelajari dan memahami struktur serta hubungan di dalam sebuah graph yaitu kumpulan elemen yang terdiri dari nodes (simpul) dan edges (sisi), yang digunakan untuk merepresentasikan jaringan atau hubungan antara entitas.</p>
+</section>
+<section id="social-network-analysis">
+<h2>social network analysis<a class="headerlink" href="#social-network-analysis" title="Link to this heading">#</a></h2>
+<section id="pengertian-social-network-analysis">
+<h3>pengertian social network analysis<a class="headerlink" href="#pengertian-social-network-analysis" title="Link to this heading">#</a></h3>
+<p>Social Network Analysis (SNA) adalah metode untuk menganalisis hubungan, pola interaksi, dan struktur jaringan dalam suatu kelompok atau komunitas. SNA digunakan untuk memahami bagaimana individu, organisasi, atau entitas lainnya saling terhubung melalui jaringan sosial.</p>
+<p><img alt="Cuplikan layar 2024-11-23 132457" src="https://hackmd.io/_uploads/Bk4dHlyQye.png" /></p>
+<p><img alt="image" src="https://hackmd.io/_uploads/Hk8aBxkXyg.png" /></p>
+<section id="social-network">
+<h4>Social network<a class="headerlink" href="#social-network" title="Link to this heading">#</a></h4>
+<p>terdapat node yang mewakili orang atau individu atau aktor. Relasi  antar objek  dapat dinyatakan dengan link atau edges yang terjadi antara aktor tersebut Social network terdiri dari banyak aktor yang mempunyai relasi satu sama lain hingga membentuk peta jaringan sosial yang dinyatakan dengan graph</p>
+<ul class="simple">
+<li><p>Tidak semua node dalam jaringan adalah penting (aktor).</p></li>
+<li><p>Mencari node yang paling penting dalam suatu jaringan.</p></li>
+<li><p>Centrality adalah penentuan aktor menggunakan ukuran pada Social Network Centrality dalam teori graf dan social network. Dibagi menjadi empat jenis,</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>degree centrality,</p></li>
+<li><p>betweeness centrality,</p></li>
+<li><p>closeness centrality,</p></li>
+<li><p>eigenvector centrality</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="degree-centrality">
+<h2>Degree Centrality<a class="headerlink" href="#degree-centrality" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Degree centrality adalah jumlah edge yang terkoneksi pada suatu node yang mewakili interaksi.</p></li>
+<li><p>Pentingnya node ditentukan oleh jumlah node yang berdekatan dengan node tersebut
+Lebih besar derajatnya (degree), maka lebih penting node itu dalam suatu jaringan
+Hanya sebagian kecil node yang memiliki derajat tinggi dalam jaringan</p></li>
+<li><p>Mengukur jumlah koneksi langsung yang dimiliki oleh sebuah node.</p></li>
+<li><p>Node dengan derajat tinggi biasanya dianggap penting.</p></li>
+</ul>
+<p><img alt="image" src="https://hackmd.io/_uploads/S1g2KgkXke.png" /></p>
+<p>Untuk  node 1, degree centrality adalah 3;
+Normalisasi degree centrality adalah<br />
+3/(9-1)=3/8.</p>
+</section>
+<section id="closeness-centrality">
+<h2>Closeness Centrality<a class="headerlink" href="#closeness-centrality" title="Link to this heading">#</a></h2>
+<section id="pengertian-closeness-centrality">
+<h3>pengertian Closeness Centrality<a class="headerlink" href="#pengertian-closeness-centrality" title="Link to this heading">#</a></h3>
+<p>Closenes centrality adalah nilai kedekatan antara satu node dengan node lain dalam jaringan dengan menghitung rata-rata dari jarak relasi node-node tersebut. Skor closeness centrality mewakili kecepatan dalam penyebaran informasi. Mengukur kedekatan sebuah node dengan node lainnya,
+Node dengan closeness tinggi dapat dengan cepat menyebarkan informasi.</p>
+<p>Contoh Closeness Centrality
+<img alt="image" src="https://hackmd.io/_uploads/S17e7WJmJe.png" />
+<img alt="image" src="https://hackmd.io/_uploads/BJhjQ-kQ1x.png" />
+<img alt="image" src="https://hackmd.io/_uploads/HJR27ZyXyl.png" /></p>
+<p>Node 4  lebih central  dari node 3</p>
+</section>
+</section>
+<section id="betweenness-centrality">
+<h2>Betweenness Centrality<a class="headerlink" href="#betweenness-centrality" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Skor betweeness Centrality mewakili seberapa besar informasi yang tersebar dari suatu aktor. Semakin besar skor, artinya aktor tersebut semakin berperan dalam penyebaran informasi</p></li>
+<li><p>Semakin banyak lintasan yang harus melewati persimpangan itu (misal tidak ada jalan alternatif), maka semakin penting arti persimpangan tersebut. Hal ini menandakan seberapa besar suatu node diperlukan sebagai penghubung dalam penyebaran informasi di dalam jaringan</p></li>
+<li><p>Ukuran ini juga dapat digunakan untuk mengidentifikasi boundary spanners, yaitu orang atau node yang berperan sebagai penghubung (jembatan) antara dua komunitas</p></li>
+<li><p>Menghitung jumlah lintasan terpendek yang melewati suatu node</p></li>
+<li><p>Node dengan  betweenness  tinggi  adalah  penting dalam komunikasi dan penyebaran informasi</p></li>
+<li><p>Mengukur seberapa sering sebuah node menjadi penghubung di antara node lain.
+Penting untuk memahami pengaruh dalam jaringan.</p></li>
+</ul>
+</section>
+</section>
 
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
-</div>
-
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -355,12 +511,58 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Al-jabar%20bolean%20dan%20gerbang%20logika.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Aljabar Boolean</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="deret%20rekursif.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Deretan (sequence)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-analisis-graph">Pengertian analisis graph</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#social-network-analysis">social network analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-social-network-analysis">pengertian social network analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#social-network">Social network</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness Centrality</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-closeness-centrality">pengertian Closeness Centrality</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
