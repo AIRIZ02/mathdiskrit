@@ -18,7 +18,7 @@ title: UAS
 | $F$  | $F$ | $F$ | $T$ |                        $$T$$                       |
 
 **SOAL 2 :**
-![h](https://hackmd.io/_uploads/HyLoiGEVke.jpg)
+![h](h.jpg)
 
 
 A. Hitung Closeness Centrality
